@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhav's Candyland Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">Bhav's Candyland Cakes</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Handcrafted with love</p>
+      <h1 class="hero-title">Welcome to<br />Bhav's Candyland Cakes</h1>
+      <p class="hero-caption">Bespoke, homemade cakes for any occasion</p>
+      <a href="#gallery" class="btn btn-primary">Explore Our Cakes</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to discover</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Gallery CTA Section -->
+  <section class="gallery-cta">
+    <div class="container">
+      <div class="section-divider">
+        <span class="divider-icon">&#10057;</span>
+      </div>
+      <h2 class="section-heading">View Our Gallery</h2>
+      <p class="section-subheading">Every cake is a unique creation — crafted to match your vision, your occasion, and your taste.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="christening cake.png" alt="Christening cake" class="gallery-img" />
+          <div class="gallery-overlay">
+            <p>Cakes for Occasions</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-05-22 at 19.41.25.png" alt="Bespoke Chanel-inspired cake with macarons and edible gems" class="gallery-img" />
+          <div class="gallery-overlay">
+            <p>Bespoke Creations</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Ellie Bday.png" alt="Celebration birthday cake" class="gallery-img" />
+          <div class="gallery-overlay">
+            <p>Celebration Cakes</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gallery-note">
+        <p>All cakes are made to order. <a href="#contact">Get in touch</a> to discuss your perfect cake.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-divider">
+        <span class="divider-icon">&#10057;</span>
+      </div>
+      <h2 class="section-heading">Contact Us</h2>
+      <p class="section-subheading">Have a special occasion coming up? We'd love to create something magical for you.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-detail">
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@bhavscandylandcakes.co.uk</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <h4>Call or WhatsApp</h4>
+              <p>Available on request</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">&#128337;</span>
+            <div>
+              <h4>Order Lead Time</h4>
+              <p>Please allow at least 2 weeks notice</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">&#127968;</span>
+            <div>
+              <h4>Based In</h4>
+              <p>UK — Local delivery &amp; collection available</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">Select an occasion...</option>
+              <option>Wedding</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Baby Shower</option>
+              <option>Christening</option>
+              <option>Corporate Event</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message">Tell Us About Your Dream Cake</label>
+            <textarea id="message" name="message" rows="5" placeholder="Flavours, design ideas, number of guests, any allergies..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+          <p class="form-success" id="formSuccess">Thank you! We'll be in touch soon. &#128149;</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Bhav's Candyland Cakes</p>
+      <p class="footer-tagline">Bespoke, homemade cakes for any occasion</p>
+      <p class="footer-copy">&copy; 2026 Bhav's Candyland Cakes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Close nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Smooth scroll & navbar shrink
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Contact form submission (placeholder)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').classList.add('visible');
+      this.reset();
+    });
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.gallery-item, .contact-detail, .section-heading, .section-subheading').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
